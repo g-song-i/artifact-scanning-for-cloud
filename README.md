@@ -4,16 +4,27 @@ This repository assembles and classifies tons of security solutions for artifact
 
 ## Table of contents
 [What is an artifact?](#what-is-an-artifact?)
+
 [Examples of artifacts](#examples-of-artifacts)
+
 [Artifact Scanning](#artifact-scanning)
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Software Analysis on the System](#software-analysis-on-the-system)
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SCA (Software Composition Analysis)](#sca-software-composition-analysis)
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SBOM (Software Bill of Materials)](#sbom-software-bill-of-materials)
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Software Inventory](#software-inventory)
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Application Security Testing](#application-security-testing)
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SAST (Static Application Security Testing)](#sast-static-application-security-testing)
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[DAST (Dynamic Application Security Testing)](#dast-dynamic-application-security-testing)
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[IAST (Interactive Application Security Testing)](#iast-interactive-application-security-testing)
+
 [Theoretical Definition](#theoretical-definition)
 
 
