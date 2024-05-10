@@ -1,9 +1,24 @@
-# Artifact-scanning-for-cloud
+# artifact-scanning-for-cloud
 
 This repository assembles and classifies tons of security solutions for artifact scanning, which especially can be adapted in cloud environments. I collect github repositories for **SCA** (Software Composition Analysis), **SBOM** (Software Bills and Materials), **Software Inventory**, also some application testing solutions such as **SAST** (Static Application Security Testing), **DAST** (Dynamic Application Security Testing), and **IAST** (Interactive Application Security Testing)
 
+## Table of contents
+[What is an artifact?](#what-is-an-artifact?)
+[Examples of artifacts](#examples-of-artifacts)
+[Artifact Scanning](#artifact-scanning)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Software Analysis on the System](#software-analysis-on-the-system)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SCA (Software Composition Analysis)](#sca-software-composition-analysis)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SBOM (Software Bill of Materials)](#sbom-software-bill-of-materials)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Software Inventory](#software-inventory)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Application Security Testing](#application-security-testing)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SAST (Static Application Security Testing)](#sast-static-application-security-testing)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[DAST (Dynamic Application Security Testing)](#dast-dynamic-application-security-testing)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[IAST (Interactive Application Security Testing)](#iast-interactive-application-security-testing)
+[Theoretical Definition](#theoretical-definition)
+
+
 ---
-## What is artifact?
+## What is an artifact?
 
 According to Gartner, sysdig and a plethora of institutes, artifacts scanning is one of the core components for CNAPP. So what is artifact here? **An artifact** in computing, generally, is a ***visible byproduct during software development***. It describes a software's architecture, design and function. It seems as a roadmap to help people understand the software's development process.
 
@@ -17,7 +32,7 @@ The picture below describes what kind of artifacts exist during software develop
 * Software documents
 * Source code
 * Prototypes
-* Risk assesements
+* Risk assessments
 
 ---
 ## Artifact Scanning
@@ -27,12 +42,15 @@ In cloud computing, artifact scanning is necessary and critical to find vulnerab
 ## Software Analysis on the System
 ### SCA (Software Composition Analysis)
 
+1. DependencyCheck ([jeremylong](https://github.com/jeremylong/DependencyCheck))
+2. scancode-toolkit ([nexB](https://github.com/nexB/scancode-toolkit))
 
 ### SBOM (Software Bill of Materials)
 Generally speaking, SBOM is somewhat different from SCA, and it can be utilized to support SCA's cons while running with them mutually complementary.
 
-1. Syft ([anchore](https://github.com/anchore/syft))
-2. Dependency Track ([DependencyTrack](https://github.com/DependencyTrack/dependency-track))
+1. syft ([anchore](https://github.com/anchore/syft))
+2. dependency-track ([DependencyTrack](https://github.com/DependencyTrack/dependency-track))
+3. trivy ([aquasecurity](https://github.com/aquasecurity/trivy))
 
 ### Software Inventory
 
@@ -40,7 +58,14 @@ Generally speaking, SBOM is somewhat different from SCA, and it can be utilized 
 ## Application Security Testing
 ### SAST (Static Application Security Testing)
 
+1. semgrep ([semgrep](https://github.com/semgrep/semgrep))
+2. terrascan ([tenable](https://github.com/tenable/terrascan))
+3. checkov ([bridgecrewio](https://github.com/tenable/terrascan))
+    * This is developed mainly for SAST, but it covers SCA too.
+
 ### DAST (Dynamic Application Security Testing)
+
+1. Triton ([jonathansalwan](https://github.com/jonathansalwan/Triton))
 
 ### IAST (Interactive Application Security Testing)
 ---
